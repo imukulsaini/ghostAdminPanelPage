@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+.bodyContainer{
+
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 50px 320px 8fr 1fr 90px;
+  
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "intro intro intro"
+    "aside postCard asidee "
+    "space space space"
+    "footer footer footer"
+    ;
+}
+#navbar{
+    
+    grid-area:navbar;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 0.75rem;
+
+
+}
+.navLeft{
+    min-height:50px;
+    max-height: 50px;
+    position :fixed;
+    top:0;
+ background-color: black;
+    width:100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navLeft ul {
+   gap:1em;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+     
+    margin:20px 0px 0px 240px;  
+    
+}
+.navLeft a {
+    color:#fff;
+
+    text-decoration: none;
+   padding-left:2px;
+    align-self: center;
+}
+#contact{
+    flex-grow: 1;
+}
+#subscribe{
+    margin-right: 250px;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid white;
+}
+#hosting{
+    padding-right: 25px;
+}
+
+.postCard{
+
+
+    grid-area:postCard;
+    display: grid;
+  
+    grid-template-areas: 
+    "introCardImage introCardImage introCard"
+    "writingPost publishingPost adminPost"
+   
+    "themePostImage themePostImage themePost"
+    ;
+}
+.introCardImage{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:678px;
+    height:380px;
+    grid-area:introCardImage;  
+
+}
+.focusImage{
+    min-width:678px;
+    max-width: 678px;
+    max-height:380px;
+}
+
+.introCard{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:320px;
+    height:380px;
+    grid-column: 110px;
+
+grid-area:introCard;
+}
+.writingPost{
+
+    width:320px;
+    height:430px;
+    grid-area:writingPost;
+
+}
+.publishingPost{
+    width:320px;
+    height:430px;
+    grid-area:publishingPost;
+
+}
+.adminPost{
+    width:320px;
+    height:430px;
+    grid-area:adminPost;
+
+}
+
+.themePost{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:320px;
+    height:380px;
+    grid-area:themePost;    
+
+} 
+.themePostImage {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:678px;
+    height:380px;
+    grid-area:themePostImage;   
+
+}
+#space{
+    grid-area:space;
+    margin-top: 50px;
+    margin-bottom:50px ;
+}
+
+.intro ,#navbar {
+    position:relative;
+    background-image: url(https://firepress.org/en/content/images/2020/12/firepress-trial-background.jpg);
+    background-size: 1500px 310px;
+}
+
+.intro{
+
+     grid-area:intro;
+}
+.introSection {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:90px;
+}
+.introSection img{
+    width:168.8px;
+    height:55px;
+  
+}
+.introSection h2 {
+  
+    color:#cecdcc;
+    line-height: 1.4em;
+    font-size: 1.9rem;
+font-weight: 100;
+}
+
+.card{
+    margin-top:5px;
+    padding-left:23px;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:1rem;
+
+}
+.postFooter img{
+    padding-top:10px;
+width:30px;
+height:30px;
+border-radius: 100%;
+object-fit:cover ;
+}
+.card p{
+   color: rgb(115, 138, 148)
+}
+.card h1 {
+    font-size: 1.4em;
+    line-height: 1.15em;
+}
+.card >a{
+    color:#3eb0ef;
+text-decoration: none;
+}
+.postFooter {
+    display: flex;
+    justify-content: flex-start;
+    
+    
+  
+}
+.postFooter a{
+    color:black;
+    text-decoration: none;
+}
+
+.list{
+  
+    padding-left:10px;
+    display: flex;
+    flex-direction: column;
+}
+#time{
+    color: rgb(115, 138, 148);
+    font-size:0.8em;
+}
+.unfocus{
+    width:320px;
+    height:200px;
+}
+.writingPostData{
+    
+    min-width:320px;
+    min-height:380px;
+    max-height: 380px;
+    max-width: 320px;
+}
+.unFocusCard{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4em;
+    gap:0.5em;
+    justify-content: flex-start;
+   
+}
+.paddingCard{
+    padding-left:3px;
+}
+.unFocusCard h1 {
+    font-size: 1.2em;
+    line-height: 1em;
+}
+.unFocusCard >a{
+    color:#3eb0ef;
+text-decoration: none;
+}
+.unFocusCard p{
+    color: rgb(115, 138, 148)
+ }
+.aside{
+    grid-area: aside;
+}
+.footerList{
+    border: 1px solid black;
+    grid-area: footer;
+}
+.asidee{
+    grid-area:asidee;
+}
+h1{
+    font-family: 'Work Sans', sans-serif;
+}
+.footerList{
+text-decoration: none;
+ color:white;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ background-color: black;
+ 
+}
+#footerCopyright{
+    flex-grow: 1;
+    padding-left: 150px;
+}
+.footerList a{
+    letter-spacing: 2px;
+
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: small;
+
+    padding-right:25px ;
+    text-decoration: none;
+    color: white;
+}
